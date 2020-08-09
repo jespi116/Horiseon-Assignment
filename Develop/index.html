@@ -10,11 +10,15 @@
 </head>
 
 <!--header-->
+<!--replaced header class with element and replaced div with nav.
+added a link to homepage on h1.-->
 
 <body>
-    <div class="header">
-        <h1>Hori<span class="seo">seo</span>n</h1>
-        <div>
+    <header>
+        <a href="/">
+            <h1>Hori<span class="seo">seo</span>n</h1>
+        </a>
+        <nav>
             <ul>
                 <li>
                     <a href="#search-engine-optimization">Search Engine Optimization</a>
@@ -26,40 +30,48 @@
                     <a href="#social-media-marketing">Social Media Marketing</a>
                 </li>
             </ul>
-        </div>
-    </div>
+        </nav>
+    </header>
     
 <!--hero section-->
     
     <div class="hero"></div>
 
 <!--main content-->
+<!--added article elements, alt descriptions of images, and id's for nav-->
     
-    <div class="content">
-        <div id="search-engine-optimization" class="search-engine-optimization">
-            <img src="./assets/images/search-engine-optimization.jpg" alt="a notebook with the acronym for search engine optimization in a thought bubble and surrounded by the words content, headings, mobile compatability, social media, link building, and backlink" class="float-left" />
-            <h2>Search Engine Optimization</h2>
-            <p>
-                The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
-            </p>
-        </div>
-        <div id="online-reputation-management" class="online-reputation-management">
-            <img src="./assets/images/online-reputation-management.jpg" alt="someone holding a mobile phone in front of a laptop which is displaying an upward trending graph labeled reputation" class="float-right" />
-            <h2>Online Reputation Management</h2>
-            <p>
-                The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
-            </p>
-        </div>
-        <div id="social-media-marketing" class="social-media-marketing">
-            <img src="./assets/images/social-media-marketing.jpg" alt="a top-down view of six people sitting around a table covered with mobile devices and stickers that reference different social medias" class="float-left" />
-            <h2>Social Media Marketing</h2>
-            <p>
-                Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
-            </p>
-        </div>
+    <div class="contents">
+        <article id="search-engine-optimization" class="content">
+            <img src="./assets/images/search-engine-optimization.jpg" alt="a notebook with the acronym for search engine optimization in a thought bubble and surrounded by the words content, headings, mobile compatability, social media, link building, and backlink" />
+            <div class="content-sec text-right">
+                <h2>Search Engine Optimization</h2>
+                <p>
+                    The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
+                </p>
+             </div>
+        </article>
+        <article id="online-reputation-management" class="content">
+            <div class="content-sec text-left">
+                <h2>Online Reputation Management</h2>
+                <p>
+                    The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
+                </p>
+            </div>
+            <img src="./assets/images/online-reputation-management.jpg" alt="someone holding a mobile phone in front of a laptop which is displaying an upward trending graph labeled reputation" />
+        </article>
+        <article id="social-media-marketing" class="content">
+            <img src="./assets/images/social-media-marketing.jpg" alt="a top-down view of six people sitting around a table covered with mobile devices and stickers that reference different social medias" />
+            <div class="content-sec text-right">
+                <h2>Social Media Marketing</h2>
+                <p>
+                    Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
+                </p>
+            </div>
+        </article>
     </div>
 
 <!--benefits column-->
+<!--added unimportant alt description to images-->
 
     <div class="benefits">
         <div class="benefit-lead">
